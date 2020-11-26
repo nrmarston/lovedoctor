@@ -36,6 +36,9 @@ const randomNumber = (arr) => {
     return number;
 }
 
-console.log(randomNumber(obj.noun));
-console.log(randomNumber(obj.verb));
-console.log(randomNumber(obj.adjective));
+const randNoun = () => {
+    const noun = obj.noun;
+    const randomNoun = noun[randomNumber(noun)];
+    return randomNoun;
+}
+
