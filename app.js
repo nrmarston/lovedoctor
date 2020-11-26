@@ -42,3 +42,11 @@ const randNoun = () => {
     return randomNoun;
 }
 
+const randVerb = () => {
+    const verb = obj.verb;
+    const randomVerb = verb[randomNumber(verb)];
+    return randomVerb;
+}
+
+console.log(randVerb());
+
