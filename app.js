@@ -55,14 +55,36 @@ const randAdj = () => {
 }
 
 const randomSentence = () => {
+    let noun = randNoun();
+    let verb = randVerb();
     let adj = randAdj();
-    let randomNumber = Math.floor(Math.random(0) * 1);
-    console.log(randomNumber);
+    let randomNumber = Math.floor(Math.random(0) * 10);
+
     switch (randomNumber) {
         case 0:
-            return `The ${adj} key lime pie is still up for debate`
+            return `The ${adj} ${noun} is still up for ${verb}`
         case 1:
             return `He decided that the time had come to be ${adj} than any of the excuses he'd used until then.`
+        case 2:
+            return `We have ${adj} kids who often ${verb} into our room at night for various reasons including ${noun} in the closet.`
+        case 3:
+            return `She thought there'd be ${adj} time if she hid her ${noun}.`
+        case 4:
+            return `${noun} should have smelled more ${adj}, but somehow it just tasted rotten.`
+        case 5:
+            return `So long and thanks for the ${noun}.`
+        case 6:
+            return `The ${noun} ${verb} the gods.`
+        case 7:
+            return `He ${verb} a ${adj} burger out of ${noun}.`
+        case 8:
+            return `There's a ${noun} for you if you look up.`
+        case 9:
+            return `Toddlers ${verb} ${noun} surprised even the ${adj} park ranger.`
+        case 10:
+            return `${noun} was leaking out the hole in the roof.`
+        default:
+            return `Please try again later`
     }
 }
 
