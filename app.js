@@ -9,7 +9,7 @@ let obj = {
         "heart",
         "possibility",
         "celebration"],
-        verb: ["bound",
+    verb: ["bound",
             "sign",
             "have",
             "embrace",
@@ -19,7 +19,16 @@ let obj = {
             "kick",
             "weigh",
             "test"],
-        adjective: []
+    adjective: ["wild",
+        "nutty",
+        "earthy",
+        "uppity",
+        "cooperative",
+        "psychological",
+        "pumped",
+        "ludicrous",
+        "comfortable",
+        "fanatical"]
 };
 
-//console.log(obj.noun[4]);
+console.log(obj.verb[3]);
