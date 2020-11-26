@@ -48,5 +48,22 @@ const randVerb = () => {
     return randomVerb;
 }
 
-console.log(randVerb());
+const randAdj = () => {
+    const adjective = obj.adjective;
+    const randomAdjective = adjective[randomNumber(adjective)];
+    return randomAdjective;
+}
 
+const randomSentence = () => {
+    let adj = randAdj();
+    let randomNumber = Math.floor(Math.random(0) * 1);
+    console.log(randomNumber);
+    switch (randomNumber) {
+        case 0:
+            return `The ${adj} key lime pie is still up for debate`
+        case 1:
+            return `He decided that the time had come to be ${adj} than any of the excuses he'd used until then.`
+    }
+}
+
+console.log(randomSentence())
